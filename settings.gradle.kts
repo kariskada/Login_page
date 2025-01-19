@@ -17,6 +17,11 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
     }
+    versionCatalogs {
+        create("readmefile") {
+            from(files("gradle/readmefile.versions.toml"))
+        }
+    }
 }
 
 rootProject.name = "Login_page"
